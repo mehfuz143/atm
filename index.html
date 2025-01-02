@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ATM Balance Check</title>
+    
+        
+</head>
+<body>
+    <header>
+        <h1>ATM Balance Check</h1>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="user-id">User ID:</label>
+                <input type="text" id="user-id" name="user-id" required>
+
+                <label for="pin">PIN:</label>
+                <input type="password" id="pin" name="pin" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <div id="login-error" class="message"></div>
+        </section>
+
+        <section id="balance-section" style="display: none;">
+            <h2>Your Balance</h2>
+            <p id="balance-amount">₹0.00</p>
+            <button id="logout-button">Logout</button>
+        </section>
+    </main>
+<script src="atm.js"></script>
+    
+</body>
+</html>
